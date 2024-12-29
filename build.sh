@@ -8,4 +8,4 @@ if ! command -v pnpm >/dev/null 2>&1; then
 fi
 
 pnpm install
-pnpn run build
+pnpm run build
