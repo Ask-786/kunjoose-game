@@ -1,4 +1,6 @@
 const { app, BrowserWindow } = require("electron");
+const url = require("url");
+const path = require("path");
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -12,7 +14,15 @@ const createWindow = () => {
 
   win.setMenuBarVisibility(false);
 
-  win.loadFile("index.html");
+  console.log(path.join(__dirname, 'dist/kunjoose-game/browser/index.html'))
+
+  win.loadURL(
+    url.format({
+      pathname: path.join(__dirname, 'dist/kunjoose-game/browser/index.html'),
+      protocol: "file:",
+      slashes: true,
+    }),
+  );
 };
 
 app.whenReady().then(() => {

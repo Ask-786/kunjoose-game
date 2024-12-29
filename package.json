@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && cp index.js dist/kunjoose-game/browser && electron dist/kunjoose-game/browser",
+    "build": "ng build --base-href ./ && electron .",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
