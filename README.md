@@ -10,6 +10,14 @@ Simple game for 5th students in madrasa to learn past and future tenses
 ### Installation
 
 ```bash
+
+# Clone the repo
+
+git clone https://github.com/Ask-786/kunjoose-game.git
+cd kunjoose-game
+
+# Run the following commands
+
 chmod +x build.s
 ./build.sh
 
