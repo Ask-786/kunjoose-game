@@ -4,8 +4,17 @@ Simple game for 5th students in madrasa to learn past and future tenses
 
 ## Dependencies
 
-- Node js
-- Npm
+> You have to install these dependencies before you try to run the app
+
+- Node js - [Download](https://nodejs.org/en/download/)
+- Npm (Should be available once you install node js)
+
+> If you don't have git installed already you have to install it too
+
+- Git - [Download](https://git-scm.com/download/)
+
+  > if you don't plan to install git, you can download the source code as zip
+  > and extract it.
 
 ### Installation
 
