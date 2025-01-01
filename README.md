@@ -10,11 +10,10 @@ Simple game for 5th students in madrasa to learn past and future tenses
 - Npm (Should be available once you install node js)
 
 > If you don't have git installed already you have to install it too
+> if you don't plan to install git, you can download the source code as zip
+> and extract it.
 
 - Git - [Download](https://git-scm.com/download/)
-
-  > if you don't plan to install git, you can download the source code as zip
-  > and extract it.
 
 ### Installation
 
