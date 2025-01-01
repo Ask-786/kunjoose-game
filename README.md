@@ -1,8 +1,8 @@
-# Simple Game
+## Simple Game
 
 Simple game for 5th students in madrasa to learn past and future tenses
 
-## Dependencies
+### Dependencies
 
 > You have to install these dependencies before you try to run the app
 
@@ -31,6 +31,6 @@ chmod +x build.sh
 
 ```
 
-#### Note
+### Note
 
 Currently there is no setup for building the app and take the output.
