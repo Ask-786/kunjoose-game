@@ -10,7 +10,7 @@ const TIMER_INTERVAL = 5000;
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  words = words;
+  words = [...words];
 
   currentWord = signal(words[0]);
   remainingTime = signal<string>('00:05');
@@ -63,6 +63,13 @@ export class AppComponent implements OnInit {
     this.currentWord.set(this.words[index]);
     this.words.splice(index, 1);
 
+    this.startTimer();
+  }
+
+  restart() {
+    this.words = [...words];
+    this.score = 0;
+    this.state.set('game');
     this.startTimer();
   }
 }
