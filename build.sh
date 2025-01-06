@@ -18,4 +18,20 @@ if [ "$1" != "build" ] && [ "$1" != "compile" ]; then
 fi
 
 pnpm install
-pnpm run $1
+
+if [ "$1" = "build" ]; then
+  pnpm run build
+  exit 0
+fi
+
+if [ -z "$2" ]; then
+  echo "Platform not specified"
+  exit 1
+fi
+
+if [ "$2" != "LINUX" ] && [ "$2" != "WINDOWS" ] && [ "$2" != "MAC" ]; then
+  echo "Invalid platform, Should be one of LINUX, WINDOWS, MAC"
+  exit 1
+fi
+
+node ./build.js $2
