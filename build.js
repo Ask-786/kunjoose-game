@@ -28,11 +28,11 @@ builder
       linux: {
         category: "Games",
         appId: "com.kunjoose.game",
-        target: ["AppImage"],
+        target: ["AppImage", "pacman"],
       },
       win: {
         appId: "com.kunjoose.game",
-        target: ["nsis"],
+        target: ["nsis", "portable"],
       },
     },
   })
