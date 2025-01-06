@@ -8,6 +8,11 @@ builder
     config: {
       productName: "Kunjoose Game",
       directories: { output: "dist/electron" },
+      mac: {
+        category: "Games",
+        appId: "com.kunjoose.game",
+        target: ["dmg"],
+      },
       linux: {
         category: "Games",
         appId: "com.kunjoose.game",
