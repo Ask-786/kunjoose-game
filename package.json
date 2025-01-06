@@ -11,7 +11,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --base-href ./ && electron .",
-    "compile": "node ./build.js",
+    "compile-linux": "node ./build.js LINUX",
+    "compile-windows": "node ./build.js WINDOWS",
+    "compile-mac": "node ./build.js MAC",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
