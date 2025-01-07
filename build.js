@@ -33,6 +33,7 @@ builder
       win: {
         appId: "com.kunjoose.game",
         target: ["nsis"],
+        signAndEditExecutable: false,
       },
     },
   })
