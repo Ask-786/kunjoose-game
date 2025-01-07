@@ -27,7 +27,7 @@ cd kunjoose-game
 # Run the following commands
 
 chmod +x build.sh
-./build.sh
+./build.sh <platform> # LINUX, WINDOWS, MAC
 
 ```
 
